@@ -1,0 +1,114 @@
+.header{    
+    /* display: flex;
+    align-items: center; */
+    padding-top: 12rem;
+    /* background: var(--color-dark);    */
+    padding-bottom: var(--py);
+    text-align: center;
+    height: calc(100vh - 5rem);
+    transition: var(--transition);
+}
+.header h1 {
+    margin-bottom: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    z-index: 10000000000000;
+    color: var(--color-dark);
+  }
+
+  .header b {
+    color: var(--color-primary);
+    font-weight: inherit;
+  }
+  
+  .header p {
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+    z-index: 10000000000000;
+  }
+
+  p.headtext{
+    margin-bottom: 5px;  
+  }
+
+  .header__image-wrapper{
+    display: none;
+  }
+  .header .btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .header {        
+        text-align: left;        
+        height: 100vh;
+        z-index: 1000;
+        padding-top: 4rem;
+    }    
+    
+    .header__container {
+        gap: 10rem;
+        display: flex;
+    }
+    
+    .header .btn-group {
+        justify-content: start;
+        gap: 30px;
+    }
+    
+    
+    
+    .header__image-wrapper{
+      width: 300px;
+      height: 380px;
+      background: var(--color-primary);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: profile__animate 8s ease-in-out infinite 1s;
+      position: relative;
+      border: 10px solid var(--color-dark);
+    }
+    .header__image{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;      
+      background: var(--color-primary);
+      position: absolute;
+      bottom: -10px;
+    }
+
+    .header__image img{
+      width: 100%;
+      height: 100%;      
+      object-fit: cover;
+
+    }
+    
+    @keyframes profile__animate {
+      0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
+      50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+      }
+      100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
+    }
+     
+    
+      .hero-data {
+        align-self: flex-start;
+        width: 50rem;
+        width: 40rem;        
+      }
+      p.headtext{        
+        margin-top: 2rem;
+      }
+  }

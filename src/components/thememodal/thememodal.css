@@ -1,0 +1,125 @@
+.customize__theme{
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+}
+.customize__theme.hide{
+    display: none;
+}
+.customize__theme .card{
+    background: var(--color-white);    
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 0 1rem var(--color-primary);
+}
+.customize__theme h4,
+.customize__theme h2{
+    color: var(--color-dark);
+}
+.customize__theme p{
+    color: var(--color-gray);
+}
+.customize__theme .color{
+    margin-top: 2rem;
+}
+.customize__theme .choose-color{
+    background: var(--color-light);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.customize__theme .choose-color span{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;  
+    cursor: pointer;  
+}
+.customize__theme .choose-color span:nth-child(1){
+    background: rgb(107, 76, 230);
+}
+.customize__theme .choose-color span:nth-child(2){
+    background: hsl(52, 75%, 60%);
+}
+.customize__theme .choose-color span:nth-child(3){
+    background: hsl(352, 75%, 60%);
+}
+.customize__theme .choose-color span:nth-child(4){
+    background: hsl(152, 75%, 60%);
+}
+.customize__theme .choose-color span:nth-child(5){
+    background: hsl(202, 75%, 60%);
+}
+.customize__theme .choose-color span.active{
+    border: 5px solid var(--color-dark);
+    width: 3rem;
+    height: 3rem;
+}
+
+.customize__theme .background{
+    margin-top: 2rem;
+}
+.customize__theme .choose-bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    gap: 1rem;
+}
+.customize__theme .choose-bg > div{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.customize__theme .choose-bg > div.active{
+    border: 2px solid var(--color-primary);
+}
+.customize__theme .choose-bg .bg-1{
+    background: #fff;
+    color: black;
+}
+.customize__theme .choose-bg .bg-2{
+    background: hsl(252, 30%, 17%);
+    color: #fff;
+}
+.customize__theme .choose-bg .bg-3{
+    background: hsl(252, 30%, 10%);
+    color: #fff;
+}
+.customize__theme .choose-bg > div span{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 80em ) {
+    .customize__theme .card{
+        width: 50%;
+        padding: 3rem;
+    }
+    .customize__theme .choose-bg{
+        gap: 1.5rem;
+    }
+    .customize__theme .choose-bg > div span{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+    }
+}
