@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import ProjectCard from '../ProjectCard'
-import img1 from '../../assets/img-1.jpg'
-import img2 from '../../assets/img-2.jpg'
+import img1 from '../../assets/netflix-2.png'
+import img2 from '../../assets/amazon.png'
 import img3 from '../../assets/img-3.jpg'
-import img4 from '../../assets/img-4.jpg'
+import img4 from '../../assets/youtube.png'
 import img5 from '../../assets/gpt.png'
-import img6 from '../../assets/img-6.jpg'
+import img6 from '../../assets/restaurant.png'
 import img7 from '../../assets/fitness.png'
 import img8 from '../../assets/img-8.jpg'
 import img9 from '../../assets/school.png'
@@ -26,7 +26,7 @@ const PortfolioPage = ({openThemeModal}) => {
         <div className="container portfolio__container">
             <ProjectCard 
                 title="Netflix Clone" 
-                technologies="Built using React Js, CSS, Firebase, Redux." 
+                technologies="Built using React Js, CSS, Firebase and Redux." 
                 imgUrl={img1}
                 github=""
                 site='https://jessyschools.netlify.app/'
@@ -47,7 +47,7 @@ const PortfolioPage = ({openThemeModal}) => {
             />
             <ProjectCard 
                 title="Youtube Clone" 
-                technologies="Built using HTML, CSS and JavaScript" 
+                technologies="Built using React Js, CSS, Firebase and Redux." 
                 imgUrl={img4}
                 github=""
                 site='https://jessyschools.netlify.app/'

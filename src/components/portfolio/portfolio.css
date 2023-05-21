@@ -46,19 +46,22 @@
     opacity: 0;
   }
   .portfolio__container .portfolio__item  h3{
-    color: var(--color-dark);
+    color: var(--color-dark); 
   } 
   
   .portfolio__container .portfolio__item .hover-items h3 {
     font-size: 1.5rem;
     color: white;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;    
   }
-  
+  .portfolio__container .portfolio__item .hover-items .wrap{
+    position: absolute;
+    top: 2.5rem;
+  }
   .portfolio__container .portfolio__item .hover-items .icons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
   }
  
   .portfolio__container .portfolio__item .hover-items .icons .icon {    
